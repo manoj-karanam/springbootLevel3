@@ -27,6 +27,7 @@ public class GreetingController {
 //    @Value("#{${dbValues}}")
 //    private Map<String,String> dbValues;
 
+
     @GetMapping("/greeting")
     public String greeeting(){
         return dbSettings.getConnection() + dbSettings.getHost() + dbSettings.getPort();
